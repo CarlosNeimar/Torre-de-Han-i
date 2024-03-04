@@ -36,12 +36,6 @@
             <div class="menu">
                 <div class="config">
                     <div class="cards">
-                        <!-- <div class="card">
-                        <div class="card-content">
-                            <h2></h2>
-                            <p></p>
-
-                        </div> -->
                         <div class="container">
                             <div class="box">
                                 <span class="title">Menu</span>
@@ -50,12 +44,12 @@
                                     <p>Escolha a quantidade de discos</p>
                                     <form action="jogo.php" method="post">
                                         <input type="number" name="discos" id="discos" min="2" max="10" value="5" required>
-                                        <input type="submit" value="enviar">
+                                        <!-- <input type="submit" value="enviar"> -->
                                     </form>
                                 </div>
                             </div>
                             <div class="box">
-                            <button>
+                            <button onclick="playGame()">
                                 <span class="title">Jogar</span>
                                 <?php
                                 print "\u{1F3AE}";
@@ -85,5 +79,7 @@
     </div>
     </div>
 </body>
+
+<script src="game.js"></script>
 
 </html>
