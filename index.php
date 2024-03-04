@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div class="telainicial">
+    <div class="telainicial" id="telainicial">
         <div class="grupoops">
             <div class="tituloprin">
                 <h1 id="titel">
@@ -77,6 +77,39 @@
             </div>
         </div>
     </div>
+    <div class="game" id="game">
+        <div class="gamespace">
+            <div class="contador">
+            <h1>Boa sorte</h1>
+            </div>
+            <div class="gameboard">
+                <div class="tower" id="tower1">
+                    <div class="hast">
+                    </div>
+                    <div class="base">
+                    </div
+                </div>
+
+                <div class="tower" id="tower2">
+                <div class="hast">
+                    </div>
+                    <div class="base">
+                    </div>
+                </div>
+
+                <div class="tower" id="tower3">
+                <div class="hast">
+                    </div>
+                    <div class="base">
+                    </div>
+                </div>
+            </div>
+            <div class="gamecontrols">
+                <div class="controls">
+                    
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
