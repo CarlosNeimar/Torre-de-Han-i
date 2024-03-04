@@ -1,0 +1,18 @@
+Tema Escuro:
+
+.color1 { #07f9a2 };
+.color2 { #09c184 };
+.color3 { #0a8967 };
+.color4 { #0c5149 };
+.color5 { #0d192b };
+
+/Cor texto/ #c4c8c5
+
+
+Tema claro:
+
+.color1 { #77b9e4 };
+.color2 { #91cbeb };
+.color3 { #abdcf2 };
+.color4 { #c5eef8 };
+.color5 { #dfffff };
