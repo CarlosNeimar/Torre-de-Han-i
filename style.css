@@ -338,4 +338,13 @@ h1 {
   height: 580px;
  }
 
-  
+ .selectarea{
+  display: flex;
+  width: 200px;
+  height: 550px;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+ } 
+

@@ -83,10 +83,12 @@
                 <p>Contador:</p>
             </div>
             <div class="gameboard">
-                <div class="tower" id="tower1">
+                <div class="tower" >
                     <div class="hast">
                     </div>
                     <div class="base">
+                    </div>
+                    <div class="selectarea">
                     </div>
                 </div>
 
@@ -95,25 +97,21 @@
                     </div>
                     <div class="base">
                     </div>
+                    <div class="selectarea">
+                    </div>
                 </div>
-
+                
                 <div class="tower" id="tower3">
                     <div class="hast">
                     </div>
                     <div class="base">
                     </div>
+                    <div class="selectarea">
+                    </div>
                 </div>
             </div>
-            <?php
-            function olamundo()
-            {
-                print "ola mundo";
-            }
-            ?>
             <div class="gamecontrols">
-                <button onclick="olamundo()">
                 <div class="controls" id="controls">
-                </button>
                 </div>
             </div>
         </div>

@@ -1,6 +1,8 @@
 var game
 var menu
 var controls;
+var iniciarback = 0;
+var parametros;
 
 document.addEventListener("DOMContentLoaded", function () {
     menu = document.getElementById("telainicial");
@@ -16,6 +18,8 @@ async function playGame() {
     createdisks();
     showGame();
     creategames(discos);
+    logicback();
+    console.log("Fim")
 }
 
 function createdisks(){
@@ -55,3 +59,30 @@ function creategames(discos) {
     }
     
 }
+
+
+function logicback(){
+    if (iniciarback == 0) {
+        discos = document.getElementById("discos").value;
+        iniciarback = 1;
+        parametros = 'valor1=' + 0 + '&valor2=' + discos + '&valor3=' + 0;
+        useback(parametros);
+    }
+
+}
+
+
+
+
+function useback(parametros) {
+    console.log(parametros);
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'back.php?' + parametros, true); 
+        xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            console.log(xhr.responseText);
+        }
+    };
+    xhr.send();
+};
+
