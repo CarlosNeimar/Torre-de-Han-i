@@ -43,18 +43,18 @@
                                     <strong>Configurações</strong>
                                     <p>Escolha a quantidade de discos</p>
                                     <form action="jogo.php" method="post">
-                                        <input type="number" name="discos" id="discos" min="2" max="10" value="5" required>
+                                        <input type="number" name="discos" id="discos" min="2" max="10" value="10" required>
                                         <!-- <input type="submit" value="enviar"> -->
                                     </form>
                                 </div>
                             </div>
                             <div class="box">
-                            <button onclick="playGame()">
-                                <span class="title">Jogar</span>
-                                <?php
-                                print "\u{1F3AE}";
-                                ?>
-                            </button>
+                                <button onclick="playGame()">
+                                    <span class="title">Jogar</span>
+                                    <?php
+                                    print "\u{1F3AE}";
+                                    ?>
+                                </button>
                             </div>
                             <div class="box">
                                 <span class="title">Feito por</span>
@@ -80,37 +80,37 @@
     <div class="game" id="game">
         <div class="gamespace">
             <div class="contador">
-            <h1>Boa sorte</h1>
-            </div>
+            <p>Contador</p>
+        </div>
             <div class="gameboard">
                 <div class="tower" id="tower1">
                     <div class="hast">
                     </div>
                     <div class="base">
-                    </div
-                </div>
-
-                <div class="tower" id="tower2">
-                <div class="hast">
-                    </div>
-                    <div class="base">
                     </div>
                 </div>
 
-                <div class="tower" id="tower3">
-                <div class="hast">
+                    <div class="tower" id="tower2">
+                        <div class="hast">
+                        </div>
+                        <div class="base">
+                        </div>
                     </div>
-                    <div class="base">
+
+                    <div class="tower" id="tower3">
+                        <div class="hast">
+                        </div>
+                        <div class="base">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="gamecontrols">
-                <div class="controls">
-                    
+                <div class="gamecontrols">
+                    <div class="controls" id="controls">
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 <script src="game.js"></script>

@@ -1,9 +1,11 @@
 var game 
 var menu
+var controls;
 
 document.addEventListener("DOMContentLoaded", function() {
     menu = document.getElementById("telainicial");
     game = document.getElementById("game");
+    controls = document.getElementById("controls");
 });
 
 async function playGame() {
@@ -21,6 +23,15 @@ function showGame(){
 }
 
 function creategames(discos){
-    // qntdiscos = parseInt(discos);
-    // console.log("discos: " + qntdiscos);
+    var discodim; 
+    qntdiscos = parseInt(discos);
+    console.log("discos: " + qntdiscos);
+    for(let i = qntdiscos - 1; i >= 0; i--)
+    controls.innerHTML += "<div class='cilindro' id='disco"+i+"'></div>";
+    for(let i = 0; i < qntdiscos; i++){
+        discodim = document.getElementById("disco"+i);
+        discodim.style.width = 200 + (i*10) + "px";
+        discodim.style.height = 50 + (i*4) + "px";
+        discodim.style.transform = "translateY(-" + (i*15) + "px)";
+    }
 }

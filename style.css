@@ -181,7 +181,7 @@ h1 {
   .hast{
     display: flex;
     width: 25px;
-    height: 400px;
+    height: 500px;
     background-color: #fff;
     border-radius: 30px;
   }
@@ -213,5 +213,124 @@ h1 {
     justify-content: center;
   
   }
+
+  .cilindro {
+ /* this variable will define how much ci*/
+ --r: 15px;
+ /* whatever values/units you want */
+ border-radius: 100% / calc(var(--r) * 2);
+}
+
+#disco0 {
+  width: 290px;
+  height: 140px;
+  background: 
+    radial-gradient(50% var(--r) at 50% var(--r), #0003 99.99%, #0000 0),
+    radial-gradient(50% var(--r) at 50% calc(100% - var(--r)), #fff3 99.99%, #0000 0),
+    rgb(233, 3, 156);
+ }
+
+#disco1 {
+  width: 280px;
+  height: 130px;
+  background: 
+    radial-gradient(50% var(--r) at 50% var(--r), #0003 99.99%, #0000 0),
+    radial-gradient(50% var(--r) at 50% calc(100% - var(--r)), #fff3 99.99%, #0000 0),
+    rgb(252, 210, 26);
+ }
+
+#disco2 {
+  width: 270px;
+  height: 120px;
+  background: 
+    radial-gradient(50% var(--r) at 50% var(--r), #0003 99.99%, #0000 0),
+    radial-gradient(50% var(--r) at 50% calc(100% - var(--r)), #fff3 99.99%, #0000 0),
+    rgb(84, 11, 151);
+ }
+
+#disco3 {
+  width: 260px;
+  height: 110px;
+  background: 
+    radial-gradient(50% var(--r) at 50% var(--r), #0003 99.99%, #0000 0),
+    radial-gradient(50% var(--r) at 50% calc(100% - var(--r)), #fff3 99.99%, #0000 0),
+    rgb(9, 110, 51);
+ }
+
+#disco4 {
+  width: 250px;
+  height: 100px;
+  background: 
+    radial-gradient(50% var(--r) at 50% var(--r), #0003 99.99%, #0000 0),
+    radial-gradient(50% var(--r) at 50% calc(100% - var(--r)), #fff3 99.99%, #0000 0),
+    rgb(223, 28, 190);
+ }
+
+#disco5 {
+  width: 240px;
+  height: 90px;
+  background: 
+    radial-gradient(50% var(--r) at 50% var(--r), #0003 99.99%, #0000 0),
+    radial-gradient(50% var(--r) at 50% calc(100% - var(--r)), #fff3 99.99%, #0000 0),
+    rgb(6, 213, 228);
+ }
+
+ #disco6 {
+  width: 230px;
+  height: 80px;
+  background: 
+    radial-gradient(50% var(--r) at 50% var(--r), #0003 99.99%, #0000 0),
+    radial-gradient(50% var(--r) at 50% calc(100% - var(--r)), #fff3 99.99%, #0000 0),
+    rgb(97, 0, 49);
+ }
+
+ #disco7 {
+  width: 220px;
+  height: 70px;
+  background: 
+    radial-gradient(50% var(--r) at 50% var(--r), #0003 99.99%, #0000 0),
+    radial-gradient(50% var(--r) at 50% calc(100% - var(--r)), #fff3 99.99%, #0000 0),
+    rgb(24, 82, 1);
+ }
+
+ #disco8 {
+  width: 210px;
+  height: 60px;
+  background: 
+    radial-gradient(50% var(--r) at 50% var(--r), #0003 99.99%, #0000 0),
+    radial-gradient(50% var(--r) at 50% calc(100% - var(--r)), #fff3 99.99%, #0000 0),
+    rgb(214, 20, 13);
+ }
+
+ #disco9 {
+  width: 200px;
+  height: 50px;
+  background: 
+    radial-gradient(50% var(--r) at 50% var(--r), #0003 99.99%, #0000 0),
+    radial-gradient(50% var(--r) at 50% calc(100% - var(--r)), #fff3 99.99%, #0000 0),
+    rgb(209, 223, 17);
+ }
+
+
+
+
+
+
+
+
+
+
+
+ .gamecontrols{
+  display: flex;
+
+ }
+
+ .controls{
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center
+ }
 
   
