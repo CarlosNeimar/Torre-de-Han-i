@@ -168,6 +168,7 @@ h1 {
     height: 100vh;
     width: 100%;
     animation: fade-in 1s ease-in-out;
+    overflow: hidden;
   }
 
   .tower{
@@ -219,6 +220,7 @@ h1 {
  --r: 15px;
  /* whatever values/units you want */
  border-radius: 100% / calc(var(--r) * 2);
+ display: none;
 }
 
 #disco0 {
@@ -331,7 +333,9 @@ h1 {
   justify-content: center;
   flex-direction: column-reverse;
   align-items: center;
-  transform: translate(-27px, -560px);
+  transform: translate(25px, -536px);
+  width: 190px;
+  height: 580px;
  }
 
   

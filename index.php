@@ -80,7 +80,7 @@
     <div class="game" id="game">
         <div class="gamespace">
             <div class="contador">
-                <p>Contadoradwaws</p>
+                <p>Contador:</p>
             </div>
             <div class="gameboard">
                 <div class="tower" id="tower1">
@@ -104,9 +104,16 @@
                     </div>
                 </div>
             </div>
+            <?php
+            function olamundo()
+            {
+                print "ola mundo";
+            }
+            ?>
             <div class="gamecontrols">
+                <button onclick="olamundo()">
                 <div class="controls" id="controls">
-
+                </button>
                 </div>
             </div>
         </div>
