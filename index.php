@@ -88,25 +88,25 @@
                     </div>
                     <div class="base">
                     </div>
-                    <div class="selectarea">
+                    <div class="selectarea" id="tower1">
                     </div>
                 </div>
 
-                <div class="tower" id="tower2">
+                <div class="tower">
                     <div class="hast">
                     </div>
                     <div class="base">
                     </div>
-                    <div class="selectarea">
+                    <div class="selectarea"  id="tower2">
                     </div>
                 </div>
                 
-                <div class="tower" id="tower3">
+                <div class="tower" >
                     <div class="hast">
                     </div>
                     <div class="base">
                     </div>
-                    <div class="selectarea">
+                    <div class="selectarea" id="tower3">
                     </div>
                 </div>
             </div>
