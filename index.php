@@ -9,8 +9,7 @@
     <!-- Icon -->
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-button.css' rel='stylesheet'>
 
-    <!-- Css -->
-    <link rel="stylesheet" href="style.css">
+
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +18,8 @@
 
 
 
-    <!-- Js -->
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -80,8 +80,8 @@
     <div class="game" id="game">
         <div class="gamespace">
             <div class="contador">
-            <p>Contador</p>
-        </div>
+                <p>Contadoradwaws</p>
+            </div>
             <div class="gameboard">
                 <div class="tower" id="tower1">
                     <div class="hast">
@@ -90,29 +90,30 @@
                     </div>
                 </div>
 
-                    <div class="tower" id="tower2">
-                        <div class="hast">
-                        </div>
-                        <div class="base">
-                        </div>
+                <div class="tower" id="tower2">
+                    <div class="hast">
                     </div>
-
-                    <div class="tower" id="tower3">
-                        <div class="hast">
-                        </div>
-                        <div class="base">
-                        </div>
+                    <div class="base">
                     </div>
                 </div>
-                <div class="gamecontrols">
-                    <div class="controls" id="controls">
 
+                <div class="tower" id="tower3">
+                    <div class="hast">
+                    </div>
+                    <div class="base">
                     </div>
                 </div>
             </div>
+            <div class="gamecontrols">
+                <div class="controls" id="controls">
+
+                </div>
+            </div>
         </div>
+    </div>
 </body>
 
+<!-- Js -->
 <script src="game.js"></script>
 
 </html>

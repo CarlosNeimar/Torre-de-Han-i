@@ -330,7 +330,8 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: column-reverse;
-  align-items: center
+  align-items: center;
+  transform: translate(-27px, -560px);
  }
 
   

@@ -30,8 +30,8 @@ function creategames(discos){
     controls.innerHTML += "<div class='cilindro' id='disco"+i+"'></div>";
     for(let i = 0; i < qntdiscos; i++){
         discodim = document.getElementById("disco"+i);
-        discodim.style.width = 200 + (i*10) + "px";
-        discodim.style.height = 50 + (i*4) + "px";
+        discodim.style.width = 100 + (i*10) + "px";
+        discodim.style.height = 25 + (i*4) + "px";
         discodim.style.transform = "translateY(-" + (i*15) + "px)";
     }
 }
