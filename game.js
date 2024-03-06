@@ -188,3 +188,62 @@ function useback(parametros, callback) {
 }
 
 
+document.getElementById("resolve").addEventListener("click", function() { 
+    const numeroDiscos = document.getElementById("discos").value;
+    const torreOrigem = 1;
+    const torreDestino = 3;
+    const torreAuxiliar =  2;
+
+console.log(`Para resolver a Torre de Hanoi com ${numeroDiscos} discos:`);
+torreDeHanoi(numeroDiscos, torreOrigem, torreDestino, torreAuxiliar);
+});
+
+function torreDeHanoi(numeroDiscos, torreOrigem, torreDestino, torreAuxiliar) {
+    if (numeroDiscos === 1) {
+        console.log(`Mova o disco de ${torreOrigem} para ${torreDestino}`);
+    } else {
+        torreDeHanoi(numeroDiscos - 1, torreOrigem, torreAuxiliar, torreDestino);
+        console.log(`Mova o disco de ${torreOrigem} para ${torreDestino}`);
+        torreDeHanoi(numeroDiscos - 1, torreAuxiliar, torreDestino, torreOrigem);
+    }
+}
+
+function movendoDisco(torreOrigem, torreDestino) {
+    var discousado;
+    var discoanim;
+    if (torreOrigem == 1 && torreDestino == 2) {
+    discousado = haste1[0];
+    adicionarPrimeiroItemEAjustar(haste2, discousado);
+    removerPrimeiroItemEAjustar(haste1)
+    discoanim = document.getElementById("disco" + discousado);
+    discoanim.style.transform = translateY("-90px");
+    discoanim.style.transform = translateX("+90px");
+    discoanim.style.transform = translateY("+90px");
+    } else if (torreOrigem == 1 && torreDestino == 3) {
+        // Code for moving the disk from tower 1 to tower 3
+    } else if (torreOrigem == 2 && torreDestino == 1) {
+        // Code for moving the disk from tower 2 to tower 1
+    } else if (torreOrigem == 2 && torreDestino == 3) {
+        // Code for moving the disk from tower 2 to tower 3
+    } else if (torreOrigem == 3 && torreDestino == 1) {
+        // Code for moving the disk from tower 3 to tower 1
+    } else if (torreOrigem == 3 && torreDestino == 2) {
+        // Code for moving the disk from tower 3 to tower 2
+    }
+
+}
+
+function removerPrimeiroItemEAjustar(array) {
+    for (let i = 0; i < array.length - 1; i++) {
+        array[i] = array[i + 1];
+    }
+    array.pop();
+}
+
+function adicionarPrimeiroItemEAjustar(array, novoItem) {
+    array.push(null);  // Adiciona um espaço extra no final
+    for (let i = array.length - 1; i > 0; i--) {
+        array[i] = array[i - 1];  // Move cada elemento para cima
+    }
+    array[0] = novoItem;  // Adiciona o novo elemento na primeira posição
+}

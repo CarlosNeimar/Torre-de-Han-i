@@ -80,7 +80,7 @@
     <div class="game" id="game">
         <div class="gamespace">
             <div class="contador">
-                <p>Contador:</p>
+                <button id="resolve">RESOLVER</button>
             </div>
             <div class="gameboard">
                 <div class="tower" >
